@@ -47,3 +47,38 @@
 //     }
 //     console.log(i);
 // }
+
+let options = {
+    width: 1024,
+    height: 1024,
+    name: "text"
+};
+
+options.bool = false;
+options.colors = {
+    bg: "red",
+    border: "black"
+};
+
+console.log(options);
+
+for (let key in options){
+    console.log("Свойство " + key + " Имеет значение " + options[key]);
+}
+console.log(Object.keys(options).length);
+
+let arr = [1,2,3,4,5];
+arr.pop();
+arr.push("6");
+arr.shift();
+arr.unshift("0");
+
+
+for (let i = 0; i < arr.length; i++){
+   console.log(arr[i]);
+}
+
+let mass = [1,3,5,7,9,12]
+for(let key of mass){
+    console.log(key);
+}
